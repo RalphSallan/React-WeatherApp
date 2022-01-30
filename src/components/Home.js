@@ -16,7 +16,7 @@ class Home extends Component {
 
     // executes when component is mounted and only then
     componentDidMount() {
-        var url = 'http://api.weatherapi.com/v1/forecast.json?key='+process.env.REACT_APP_WEATHER_API_KEY+'&q=Toronto&days=4&aqi=no&alerts=no';
+        var url = 'https://api.weatherapi.com/v1/forecast.json?key='+process.env.REACT_APP_WEATHER_API_KEY+'&q=Toronto&days=4&aqi=no&alerts=no';
         axios.get(url)
         .then(response => {
             //console.log(response.data);
